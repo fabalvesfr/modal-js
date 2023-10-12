@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+.modal {
+    position: fixed; /* Va permettre que la boîte modale prenne l'entièreté de la fênetre */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.8); /* On ajoute un fond noir opaque */
+}
+
+.modal-wrapper {
+    background-color: white;
+
+    overflow: auto; /* Un scroll bar apparaît si l'écran est trop petit sur la largeur */
+    width: 500 px;
+    height: 300px;
+    max-width: calc(100vw - 20px); /* Calc() = calculer, ça nous un peu de marge sur les côtés */
+    max-height: calc(100vh - 20 px);
+    padding: 20px;
+
+}

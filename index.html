@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <a href="#modal1" class="js-modal">Lien pour ouvrir la boîte modale</a> 
+
+   <!-- On considère qu'une boîte modale ne fait pas partie du contenu principal de la page, on la met donc dans un balise <aside></aside> -->
+   <!-- ARIA: Accessible Rich Internet Applications
+   Accessible Rich Internet Applications (ARIA) is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.
+
+It supplements HTML so that interactions and widgets commonly used in applications can be passed to assistive technologies when there is not otherwise a mechanism. For example, ARIA enables accessible JavaScript widgets, form hints and error messages, live content updates, and more. -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes    -->
+
+<!-- TODO: utiliser <dialog></dialog> (pas besoin de tous les aria attributes) plutôt que <aside></aside> -->
+<aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="title-modal" style="display: none;">
+        <div class="modal-wrapper js-modal-stop">
+            <button class="js-modal-close">Fermer la boîte modale</button>
+            <h1 id="title-modal">Five hours? Aw, man! Couldn't you just get me the death penalty?</h1>
+<p>I could if you hadn't turned on the light and shut off my stereo. You lived before you met me?! Uh, is the puppy mechanical in any way? Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life.</p>
+<p>I'm Santa Claus! <strong> Morbo will now introduce tonight's candidates… PUNY HUMAN NUMBER ONE, PUNY HUMAN NUMBER TWO, and Morbo's good friend, Richard Nixon.</strong> <em> Ah, the 'Breakfast Club' soundtrack!</em> I can't wait til I'm old enough to feel ways about stuff!</p>
+<input type="text">
+<h2>Yes, I saw. You were doing well, until everyone died.</h2>
+<p>I'm a thing. Five hours? Aw, man! Couldn't you just get me the death penalty? You are the last hope of the universe. Leela, Bender, we're going grave robbing.</p>
+<a href="#">Random link</a>
+<ol>
+<li>You, minion. Lift my arm. AFTER HIM!</li><li>Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life.</li><li>Can we have Bender Burgers again?</li>
+</ol>
+        </div>
+   </aside>
+
+   <script src="app.js"></script>
+</body>
+</html>
